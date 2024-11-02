@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(24, 104, 94);
+    color: rgb(231, 255, 252);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50vh;
+}
+.box1{
+    width: 130px;
+    height: 130px;
+    background-color: rgb(112, 255, 238);
+    animation: spin 4s ease 3s forwards;
+}
+.box2{
+    width: 130px;
+    height: 130px;
+    background-color: rgb(232, 255, 173);
+    animation: spin2 3s infinite;
+}
+@keyframes spin{
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
+@keyframes spin2{
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+    
+}
